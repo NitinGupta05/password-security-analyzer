@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Password Strength & Security Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <div class="app">
+    <header class="app-header">
+      <div>
+        <h1>Password Security Analyzer</h1>
+        <p class="subtitle">Check strength, entropy, policy compliance, and more in real-time.</p>
+      </div>
+      <button id="themeToggle" type="button" class="pill-btn">
+        🌙 Dark
+      </button>
+    </header>
+
+    <section class="card">
+      <div class="field-row">
+        <div class="field">
+          <label for="username">Username (optional)</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter username (to avoid using it in password)"
+          >
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input
+              type="password"
+              id="password"
+              placeholder="Create a strong password"
+            >
+            <button id="togglePassword" type="button" class="icon-btn">
+              👁
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="confirmPassword">Confirm Password</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Re-type your password"
+          >
+          <p id="matchText" class="hint"></p>
+        </div>
+      </div>
+
+      <div class="controls-row">
+        <div class="field">
+          <label for="policy">Password Policy</label>
+          <select id="policy">
+            <option value="basic">Basic (8+ chars)</option>
+            <option value="strong">Strong (12+ mix of all types)</option>
+            <option value="very-strong">Very Strong (14+ highly complex)</option>
+          </select>
+        </div>
+        <button id="copyBtn" type="button" class="pill-btn">
+          📋 Copy Password
+        </button>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="meter-block">
+        <div class="meter">
+          <div id="strengthBar" class="meter-bar"></div>
+        </div>
+        <p id="strengthText" class="strong-text">Start typing to analyze your password.</p>
+        <p id="policyStatus" class="policy-text"></p>
+      </div>
+
+      <div class="grid">
+        <div>
+          <h3>Rules & Checks</h3>
+          <ul class="rules">
+            <li id="rule-length">Minimum length requirement</li>
+            <li id="rule-case">Contains upper & lower case letters</li>
+            <li id="rule-number">Contains at least one number</li>
+            <li id="rule-special">Contains at least one special character</li>
+            <li id="rule-username">Does not contain username</li>
+            <li id="rule-common">Not a common password</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Entropy & Security Insights</h3>
+          <div class="info-box">
+            <p><strong>Entropy:</strong> <span id="entropy">0</span> bits</p>
+            <p><strong>Estimated crack time:</strong> <span id="crackTime">–</span></p>
+          </div>
+          <div class="info-box">
+            <h4>Suggestions</h4>
+            <p id="suggestions">
+              Use a long password with a mix of uppercase, lowercase, numbers, and special characters.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="app-footer">
+      <p>This is a client-side tool for learning and practice. Do not use your real passwords here.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
