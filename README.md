@@ -1,7 +1,7 @@
 # password-security-analyzer 🔐
 An advanced "password strength and security analyzer" built using "HTML, CSS, and JavaScript".   It provides real-time feedback on password strength, entropy, policy compliance, and more — all in the browser.
 
-Live link: https://nitingupta05.github.io/path-hunter/
+Live link: https://nitingupta05.github.io/password-security-analyzer/
 ## Features
 -  Live password strength meter with color-coded bar  
 -  Real-time validation of:
