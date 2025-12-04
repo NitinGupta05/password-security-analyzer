@@ -1,8 +1,9 @@
-# password-security-analyzer 🔐
+password-security-analyzer 
+
 An advanced "password strength and security analyzer" built using "HTML, CSS, and JavaScript".   It provides real-time feedback on password strength, entropy, policy compliance, and more — all in the browser.
 
 Live link: https://nitingupta05.github.io/password-security-analyzer/
-## Features
+Features
 -  Live password strength meter with color-coded bar  
 -  Real-time validation of:
   - Length requirements  
@@ -22,7 +23,7 @@ Live link: https://nitingupta05.github.io/password-security-analyzer/
 -  Dark / light theme toggle  
 -  All logic runs client-side in pure JavaScript
 
-🧰 Tech Stack
+Tech Stack
 
 - HTML5 – structure  
 - CSS3 – layout, styling, dark/light themes  
@@ -30,7 +31,7 @@ Live link: https://nitingupta05.github.io/password-security-analyzer/
 
 No frameworks or external libraries.
 
-## 📁 Folder Structure
+Folder Structure
 
 password-security-lab/
 ├── index.html      # Main page
